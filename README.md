@@ -4,7 +4,7 @@ Disponer un ListView con los nombres de paises de sudamérica. Cuando se selecci
 
 # Desarrollo
 
-1.- Importamos las libreias y los widget 
+1.- Importamos las librerias y los widget 
 
 ![image](https://user-images.githubusercontent.com/38448479/221082511-3b772291-f51b-486e-b9d9-66d30e2ca1de.png)
 
