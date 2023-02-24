@@ -1,20 +1,41 @@
 #  EJERCICIO-46
 ##  Componente ActionBar (Ocultarlo y mostrarlo)
 
-A continuación se va a explicar cómo se va a cambiar el icono que nos da por defecto Android Studio.
+Este proyecto consiste en crear un componente de ActionBar que se puede ocultar y mostrar, y que utiliza la internacionalización y el archivo string.xml. La estructura del proyecto se muestra a continuación:
 
-1- Para cambiar el icono de nuestra aplicación que Android Studio da por defecto, nos dirigimos a la siguiente ruta como se muestra en la siguiente Figura.
+![image](https://user-images.githubusercontent.com/74844624/221084195-497d9efb-af17-43f1-bcb9-3bd70218a7d2.png)
 
-![ imagen ](https://user-images.githubusercontent.com/105765407/221035089-35192068-2559-4dd2-adfa-5c491b2424fa.png)
+### Pasos para crear la aplicación:
 
-2- Seguidamente en la Figura que se muestra a continuación se muestran las imágenes cargadas de los iconos conforme a tamaño y dispositivos a adaptarse.
+1. Crear el método `onOptionsItemSelected` en el archivo `MainActivity.java`. Este método se encargará de manejar la selección de opciones del menú. Puede utilizar el siguiente código como punto de partida:
 
-![ imagen ](https://user-images.githubusercontent.com/105765407/221035217-e453737e-ff90-4aee-b569-97ea44566662.png)
+```js
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+    int id = item.getItemId();
+    if (id==R.id.opcion1) {
+        Toast.makeText(this,"Se seleccionó la primer opción",Toast.LENGTH_LONG).show();
+    }
+    if (id==R.id.opcion2) {
+        Toast.makeText(this,"Se seleccionó la segunda opción",Toast.LENGTH_LONG).show();
+    }
+    if (id==R.id.opcion3) {
+        Toast.makeText(this,"Se seleccionó la tercer opción", Toast.LENGTH_LONG).show();
+    }
+    return super.onOptionsItemSelected(item);
+}
+```
 
-3- Para cambiar el icono debemos reemplazar estas imágenes con la imagen que se desea ya la misma vez llamar en el código como se muestra a continuación.
+2. Crear el archivo de diseño del ActionBar.
 
-![ imagen ](https://user-images.githubusercontent.com/105765407/221035334-e97fae03-5a58-4661-8c15-415736f54d6f.png)
+![image](https://user-images.githubusercontent.com/74844624/221084924-afa89aa4-5d3d-4586-9267-1b94031089b8.png)
 
-4- Una vez cambiado la imagen, al instalar nuestra apk el logo de la aplicación cambiaria conforme a la imagen que alteró para el logo.
+3. Crear el archivo de menú con las opciones que se deseen.
 
-![ imagen ](https://user-images.githubusercontent.com/105765407/221036077-8ebdf62e-30e7-48f2-a68c-68e556e94dae.png)
+![image](https://user-images.githubusercontent.com/74844624/221085072-4923afa6-4808-4d63-bc10-b4e7de3d905a.png)
+
+4. Ejecutar la aplicación en un emulador o dispositivo físico para ver el ActionBar en acción:
+
+![image](https://user-images.githubusercontent.com/74844624/221083780-9c9faa2a-befe-4174-8d29-bc1539c1bd19.png)
+
+¡Y eso es todo! Finalmente con los pasos anteriores se debería tener éxito en la creación de una aplicación con un ActionBar que se puede ocultar y mostrar, y que utiliza la internacionalización y el archivo string.xml.
