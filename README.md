@@ -56,6 +56,5 @@ Después de ingresar los números y seleccionar la operación, el resultado de l
 
 ![image](https://user-images.githubusercontent.com/74844624/221088838-b9de7d2f-8b42-47c2-9c10-5d9057264434.png)
 
-## Conclusiones
-
+## Conclusión
 En este proyecto se ha utilizado el archivo strings.xml para mejorar la accesibilidad de la aplicación y permitir su uso en diferentes idiomas y regiones. También se ha implementado la funcionalidad de suma y resta en la aplicación de manera eficiente y sencilla.
